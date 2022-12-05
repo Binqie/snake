@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="customisation">
+            <div class="skinChanger">
+                <h2>Change Skin</h2>
+                <form id="skin">
+                    <div>
+                        <input type="radio" id="green" name="skin" value="color-1" data-tailColor="#85d266" data-headColor="#50be25" checked>
+                        <label for="green">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="red" name="skin" value="color-2" data-tailColor="#ff5a5f" data-headColor="#c81d25">
+                        <label for="red">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="blue" name="skin" value="color-3" data-tailColor="#8ecae6"
+                            data-headColor="#219ebc">
+                        <label for="blue">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="purple" name="skin" value="color-4" data-tailColor="#c47ac0"
+                            data-headColor="#77567a">
+                        <label for="purple">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="fieldChanger">
+                <h2>Customise field</h2>
+                <form id="field">
+                    <div>
+                        <input type="radio" id="dark" name="field" value="#454955" checked>
+                        <label for="dark">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="yellow" name="field" value="#f5cb5c">
+                        <label for="yellow">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="light" name="field" value="#cfdbd5">
+                        <label for="light">
+                            <span>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg"
+                                    alt="Checked Icon" />
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="changeTheme">
+            <div class="item">
+                <div class="toggle-rect-bw">
+                    <p>dark mode</p>
+                    <input type="checkbox" id="rect2" name="check">
+                    <label for="rect2"></label>
+                </div>
+            </div>
+        </div>
+        <div class="scores">
+            <div class="best-score">Best score: <span></span></div>
+            <div class="current-score">Current score: <span></span></div>
+        </div>
+        <div class="game">
+            <div class="snake"></div>
+        </div>
+        <div class="button">
+            <button class="btn start-button">start</button>
+        </div>
+    </div>
+    <div class="modal-window">
+        <div class="cookiesContent" id="cookiesPopup">
+            <img src="./snake.png" alt="cookies-img" />
+            <p>Game over!</p>
+            <button class="btn accept">OK</button>
+        </div>
+    </div>
+</body>
+
+</html>
