@@ -23,7 +23,7 @@ let tailsCoords = [{top: snake.style.top, left: snake.style.left}];
 let startGameStamp;
 let createAppleStamp;
 let headColor = '#50be25',
-    tailColor = '"#85d266',
+    tailColor = '#85d266',
     fieldColor = '#454955';
 
 skinChanger.addEventListener('click', () => {
@@ -33,8 +33,8 @@ skinChanger.addEventListener('click', () => {
     tailColor = document.querySelector('input[name="skin"]:checked').getAttribute('data-tailColor');
     document.querySelector('.snake').style.backgroundColor = headColor;
     document.querySelectorAll('.tail').forEach((tail) => tail.style.backgroundColor = tailColor)
+    console.log(tailColor);
     
-    console.log(headColor, tailColor);
 })
 
 fieldChanger.addEventListener('click', () => {
@@ -52,7 +52,7 @@ currentScore.innerHTML = 0;
     
 game.style.width = '500px'
 game.style.height = '500px'
-game.style.backgroundColor = '#454955'
+game.style.backgroundColor = fieldColor;
 
 snake.style.width = '20px';
 snake.style.height = '20px';
